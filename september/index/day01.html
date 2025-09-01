@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>September - Day 01</title>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+    }
+
+    .container{
+      padding: 20px;
+    }
+
+    textarea{
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .contador{
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .safe{ color: green;}
+    .warning{ color: orange;}
+    .danger{ color: red;}
+
+    /* GERADOR SENHA */
+    #geradorSenha button{
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #senhaGerada{
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    #celsius{
+      width: 30%;
+      padding: 5px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praticando JavaScript - Dia 01.09.2025</h1>
+
+  <div class="container" id="validacaoEmail">
+    <h2>Validar E-mail</h2>
+    <input type="text" id="email" placeholder="Digite um email">
+    <button id="validar">Enviar</button>
+  </div>
+
+  <div class="container" id="contadorLimite">
+    <h2>Contador de Caracteres com Limite</h2>
+    <textarea id="meuTextarea" placeholder="Digite algo..." maxlength="100"></textarea>
+    <p>Caracteres restantes: <span id="contador" class="contador safe">100</span></p>
+  </div>
+
+  <div class="container" id="geradorSenha">
+    <h2>Gerador de Senha Aleatória</h2>
+    <button id="gerarSenha">Gerar Senha</button>
+    <p>Senha: <span id="senhaGerada">--------</span></p>
+  </div>
+
+  <div class="container" id="conversorTemperatura">
+    <h2>Cnversor de Temperatura</h2>
+    <input type="number" id="celsius" placeholder="Digite uma temperatura em Celsius">
+    <button id="submit">Enviar</button>
+    <p>Temperatura em Fahrenheit: <span id="temperaturaFahrenheit"></span></p>
+    <p>Temperatura em Kelvin: <span id="temperaturaKelvin"></span></p>
+  </div>
+
+  <script src="../script/script01.js"></script>
+</body>
+</html>
